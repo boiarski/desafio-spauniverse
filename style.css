@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-home: url(./assets/mountains-universe-1.png);
+    --bg-universe: url(./assets/mountains-universe02.png);
+    --bg-exploration: url(./assets/mountains-universe-3.png);
+
+    --tt-nav-blur: #c4c4cc;
+    --tt-nav-focus: #ffffff;
+    --text-color: #e1e1e6;
+
+    --btn-border: #ffffff;
+    --btn-text: #ffffff;
+    --btn-bg-hover: #ffffff;
+    --btn-text-hover: #02799d;
+}
+
+html, button, a{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.bgHome{
+    background: var(--bg-home);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgUniverse{
+    background: var(--bg-universe);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgExploration{
+    background: var(--bg-exploration);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    padding: 4rem 0 4rem 7.6rem;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+    color: var(--tt-nav-blur);
+
+    transition: .3s;
+}
+
+.active{
+    font-size: 2.4rem;
+    font-weight: bold; 
+    color: var(--tt-nav-focus); 
+}
+
+.container{
+    display: flex;    
+    height: 100vh;
+}
+
+.container, .homePage{
+    display: grid;
+    place-content: center;    
+    height: 100vh;
+}
+
+.container, .others{
+    padding: 6.2rem 10.2rem;
+}
+
+h1{
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 125%;
+    color: var(--text-color);
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -12.5rem;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--text-color);
+    width: 65rem;
+}
+
+button{
+    margin-top: 2.4rem;
+
+    padding: 1.2rem 3.2rem;
+    border: solid 2px var(--btn-border);
+    border-radius: .5rem;
+
+    background: transparent;
+
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    transition: background .3s;
+}
+
+button:hover{
+    background: var(--btn-bg-hover);
+    color: var(--btn-text-hover);
+}
+
